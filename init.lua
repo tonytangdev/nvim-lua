@@ -1,5 +1,6 @@
 require('theme')
 require('lsp')
+require('code-completion')
 
 vim.cmd([[
   augroup packer_user_config
@@ -16,4 +17,13 @@ return require('packer').startup(function()
 	use "jose-elias-alvarez/null-ls.nvim"
 	use "jose-elias-alvarez/nvim-lsp-ts-utils"
 	use "nvim-lua/plenary.nvim"
+
+	-- code completion
+	use 'hrsh7th/cmp-nvim-lsp'
+	use 'hrsh7th/cmp-buffer'
+	use 'hrsh7th/cmp-path'
+	use 'hrsh7th/cmp-cmdline'
+	use 'hrsh7th/nvim-cmp'
+	use 'hrsh7th/cmp-vsnip'
+	use 'hrsh7th/vim-vsnip'
 end)
