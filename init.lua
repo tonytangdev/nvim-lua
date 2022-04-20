@@ -1,3 +1,4 @@
+vim.g.mapleader = " "
 require('theme')
 require('lsp')
 require('code-completion')
@@ -10,6 +11,8 @@ vim.cmd([[
     autocmd BufWritePost plugins.lua source <afile> | PackerCompile
   augroup end
 ]])
+
+
 return require('packer').startup(function()
 	use 'wbthomason/packer.nvim' -- Packer can manage itself
 	use 'bluz71/vim-nightfly-guicolors' -- Theme
