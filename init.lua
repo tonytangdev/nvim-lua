@@ -1,6 +1,8 @@
 require('theme')
 require('lsp')
 require('code-completion')
+require('tree-sitter')
+
 
 vim.cmd([[
   augroup packer_user_config
@@ -26,4 +28,10 @@ return require('packer').startup(function()
 	use 'hrsh7th/nvim-cmp'
 	use 'hrsh7th/cmp-vsnip'
 	use 'hrsh7th/vim-vsnip'
+
+	-- Code highlighting
+	use {
+        	'nvim-treesitter/nvim-treesitter',
+        	run = ':TSUpdate'
+    	}
 end)
