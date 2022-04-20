@@ -3,7 +3,7 @@ require('theme')
 require('lsp')
 require('code-completion')
 require('tree-sitter')
-
+require('telescope')
 
 vim.cmd([[
   augroup packer_user_config
@@ -37,4 +37,10 @@ return require('packer').startup(function()
         	'nvim-treesitter/nvim-treesitter',
         	run = ':TSUpdate'
     	}
+
+	-- Fuzzy finder
+	use {
+  		'nvim-telescope/telescope.nvim',
+  		requires = { {'nvim-lua/plenary.nvim'} }
+	}
 end)
