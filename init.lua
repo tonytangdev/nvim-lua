@@ -6,7 +6,7 @@ require('code-completion')
 require('tree-sitter')
 require('telescope')
 require('tree')
-require('hop')
+require('git')
 
 vim.cmd([[
   set number
@@ -48,10 +48,17 @@ return require('packer').startup(function()
   		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
+	-- File Explorer
 	use {
     		'kyazdani42/nvim-tree.lua',
     		requires = {
-    	  	'kyazdani42/nvim-web-devicons', -- optional, for file icon
-    	}
-}
+    	  		'kyazdani42/nvim-web-devicons', -- optional, for file icon
+    		}
+	}
+
+	-- Git
+	use {
+  		'lewis6991/gitsigns.nvim',
+  		-- tag = 'release' -- To use the latest release
+	}
 end)
