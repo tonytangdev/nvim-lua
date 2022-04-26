@@ -15,3 +15,4 @@
 - [NVIM-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (Code highlighting)
 - [Teleescope](https://github.com/nvim-telescope/telescope.nvim) (Fuzzy finder)
 - [NerdTree](https://github.com/kyazdani42/nvim-tree.lua#install) (File explorer)
+- [Nvim-autopairs](https://github.com/windwp/nvim-autopairs)

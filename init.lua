@@ -7,6 +7,7 @@ require('tree-sitter')
 require('telescope')
 require('tree')
 require('git')
+require('auto-pairs')
 
 vim.cmd([[
   set number
@@ -64,4 +65,7 @@ return require('packer').startup(function()
   		'lewis6991/gitsigns.nvim',
   		-- tag = 'release' -- To use the latest release
 	}
+
+	-- Autopairs brackets
+	use 'windwp/nvim-autopairs'
 end)
