@@ -8,6 +8,7 @@ require('telescope')
 require('tree')
 require('git')
 require('auto-pairs')
+require('indents')
 
 vim.cmd([[
   set number
@@ -68,4 +69,7 @@ return require('packer').startup(function()
 
 	-- Autopairs brackets
 	use 'windwp/nvim-autopairs'
+
+	-- Indent guides
+	use 'lukas-reineke/indent-blankline.nvim'
 end)

@@ -16,3 +16,4 @@
 - [Teleescope](https://github.com/nvim-telescope/telescope.nvim) (Fuzzy finder)
 - [NerdTree](https://github.com/kyazdani42/nvim-tree.lua#install) (File explorer)
 - [Nvim-autopairs](https://github.com/windwp/nvim-autopairs)
+- [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim) (Display indents)
