@@ -22,6 +22,7 @@ local on_attach = function(client, bufnr)
     vim.cmd("command! LspSignatureHelp lua vim.lsp.buf.signature_help()")    
     
     buf_map(bufnr, "n", "<F12>", ":LspDef<CR>")
+    buf_map(bufnr, "n", "<F11>", ":LspRefs<CR>")
     buf_map(bufnr, "n", "<F2>", ":LspRename<CR>")
     buf_map(bufnr, "n", "gy", ":LspTypeDef<CR>")
     buf_map(bufnr, "n", "H", ":LspHover<CR>")
