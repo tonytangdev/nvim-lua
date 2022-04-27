@@ -9,6 +9,7 @@ require('tree')
 require('git')
 require('auto-pairs')
 require('indents')
+require ('comments')
 
 vim.cmd([[
   set number
@@ -72,4 +73,8 @@ return require('packer').startup(function()
 
 	-- Indent guides
 	use 'lukas-reineke/indent-blankline.nvim'
+	
+	-- Comments
+	use 'numToStr/Comment.nvim'
+
 end)
